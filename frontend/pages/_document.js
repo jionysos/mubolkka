@@ -21,7 +21,6 @@ export default class extends Document {
             name="viewport"
             content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
           />
-          
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="ko_KR" />
           <meta property="og:site_name" content={getConfig().publicRuntimeConfig.SITE_NAME} />
