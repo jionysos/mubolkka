@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 export default () => (
-  <div>
+  <div className="w-100">
     <div className="main-image">
       <div className="d-flex justify-content-between">
         <div className="logo">netplix</div>
@@ -19,15 +19,13 @@ export default () => (
             <li className="nav-item">
               <a className="btn bnt-danger btn-form">그냥 볼래요</a>
             </li>
-            <li className="nav-item">
+            <Link href="/recommends">
               <a className="btn bnt-danger btn-form">추천받아 볼래요</a>
-            </li>
+            </Link>
 
         </ul>
       </div>    
     </div>
-
-
     <style jsx>{`{
       .mb-10 {
         margin-bottom: 200px; 
