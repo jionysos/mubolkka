@@ -16,13 +16,14 @@ export default () => (
         </div>
       <div>
         <ul className="nav justify-content-center">
-            <li className="nav-item">
+          <li className="nav-item">
+            <Link href="/just_watch">
               <a className="btn bnt-danger btn-form">그냥 볼래요</a>
-            </li>
+            </Link>
             <Link href="/recommends">
               <a className="btn bnt-danger btn-form">추천받아 볼래요</a>
             </Link>
-
+          </li>
         </ul>
       </div>    
     </div>
