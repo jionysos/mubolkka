@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button } from 'reactstrap'
-
+// import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, CardImgOverlay, Row, Col } from 'reactstrap';
 
 const data = [
   {
@@ -15,6 +15,399 @@ const data = [
   }
 ]
 
-export default (props) => (
-  <Button color="danger">Danger! 단거!</Button>
-)
+
+const Example = (props) => {
+  
+  return (
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <a className="navbar-brand" href="#">MUBOLKKA</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Link</a>
+            </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a className="dropdown-item" href="#">Action</a>
+                <a className="dropdown-item" href="#">Another action</a>
+                <div className="dropdown-divider"></div>
+                <a className="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form className="form-inline my-2 my-lg-0">
+            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <Row>
+        
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20180627_126/1530072185130JQkS8_JPEG/10_EC8DB8EB84A4EC9DBC_ipad.jpg?type=a210" alt="Card image cap" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col><Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20180627_126/1530072185130JQkS8_JPEG/10_EC8DB8EB84A4EC9DBC_ipad.jpg?type=a210" alt="Card image cap" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col><Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20180627_126/1530072185130JQkS8_JPEG/10_EC8DB8EB84A4EC9DBC_ipad.jpg?type=a210" alt="Card image cap" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col><Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20180627_126/1530072185130JQkS8_JPEG/10_EC8DB8EB84A4EC9DBC_ipad.jpg?type=a210" alt="Card image cap" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20180627_126/1530072185130JQkS8_JPEG/10_EC8DB8EB84A4EC9DBC_ipad.jpg?type=a210" alt="Card image cap" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>      
+        
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20170530_183/1496138222148Nv1Cw_JPEG/thumb_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20180627_126/1530072185130JQkS8_JPEG/10_EC8DB8EB84A4EC9DBC_ipad.jpg?type=a210" alt="Card image cap" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>   
+        
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20180627_126/1530072185130JQkS8_JPEG/10_EC8DB8EB84A4EC9DBC_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>   
+        
+        <Col sm="2">
+          <CardImg height="210" src="https://webtoon-phinf.pstatic.net/20180627_126/1530072185130JQkS8_JPEG/10_EC8DB8EB84A4EC9DBC_ipad.jpg?type=a210" alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>A Good Day to be a Dog</CardTitle>
+              <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+              <CardText>
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </CardText>
+            </CardImgOverlay>
+        </Col>
+        
+        <Col sm="2">
+          <Card body>
+            <CardTitle>Special Title Treatment</CardTitle>
+            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <Button>Go somewhere</Button>
+          </Card>
+        </Col>
+        
+        <Col sm="2">
+          <Card body>
+            <CardTitle>Special Title Treatment</CardTitle>
+            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <Button>Go somewhere</Button>
+          </Card>
+        </Col>
+        
+        <Col sm="2">
+          <Card body>
+            <CardTitle>Special Title Treatment</CardTitle>
+            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <Button>Go somewhere</Button>
+          </Card>
+        </Col>
+        
+        <Col sm="2">
+          <Card body>
+            <CardTitle>Special Title Treatment</CardTitle>
+            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <Button>Go somewhere</Button>
+          </Card>
+        </Col>
+        
+        <Col sm="2">
+          <Card body>
+            <CardTitle>Special Title Treatment</CardTitle>
+            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <Button>Go somewhere</Button>
+          </Card>
+        </Col>
+        
+        <Col sm="2">
+          <Card body>
+            <CardTitle>Special Title Treatment</CardTitle>
+            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <Button>Go somewhere</Button>
+          </Card>
+        </Col>
+        
+        <Col sm="2">
+          <Card body>
+            <CardTitle>Special Title Treatment</CardTitle>
+            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <Button>Go somewhere</Button>
+          </Card>
+        </Col>
+        
+        <Col sm="2">
+          <Card body>
+            <CardTitle>Special Title Treatment</CardTitle>
+            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <Button>Go somewhere</Button>
+          </Card>
+        </Col>
+      </Row>
+    </div>
+  );
+};
+
+export default Example;
