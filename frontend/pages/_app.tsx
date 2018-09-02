@@ -77,7 +77,7 @@ class MyApp extends App<Props> {
     return (
       <Container>
         <Head>
-          <title>배고파</title>
+          <title>MUBOLKKA</title>
         </Head>
         <ToastContainer
           position="top-center"
